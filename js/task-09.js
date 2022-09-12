@@ -9,6 +9,7 @@ function getRandomHexColor() {
 }
 
 function onChangeColor() {
-  bodyRef.style.backgroundColor = getRandomHexColor();
-  textColorRef.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  bodyRef.style.backgroundColor = randomColor;
+  textColorRef.textContent = randomColor;
 }
